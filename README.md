@@ -21,14 +21,14 @@ This repository includes the following deliverables:
 
 In the following module **[main.py](main.py)**, you will be able to execute the modeling and evaluation process for the XGBoost - BERT embeddings model. To take a closer look at the exploration with other models, you can refer to the **[notebook](notebooks/MELI_challenge.ipynb)**.
 
-When running the process, it will train the model, save the `.pkl` file, and additionally, a summary of the obtained metrics will be printed on the screen.
+When running the process, it will train the model, save the `.pkl` file, and additionally, a summary of the obtained metrics will be printed on the console.
 
 
 In `requirements.txt` file, you will find the list of packages required to compile the process. If they are not installed already, you can execute:
 
 `pip install -r requirements.txt`
 
-To run the process correctly, it is necessary to have the `.parquet` and  `MLA_100k_checked_v3` files attached in the email with the solution. These files should be placed in the `notebooks` folder.
+To run the process correctly, it is necessary to have the `.parquet` and  `MLA_100k_checked_v3.jsonlines` files attached in the email with the solution. These files should be placed in the `notebooks` folder.
 
 
 ### 2. Feature Selection and Performance Evaluation
