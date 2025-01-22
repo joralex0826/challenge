@@ -83,12 +83,12 @@ class FeatureEngineering:
         print('Transforming tags...')
         tags_dummies = data['tags'].explode().str.get_dummies().groupby(level=0).sum()
         return pd.concat([data.drop(columns=['tags']), tags_dummies], axis=1)
-
+    
     def transform_dates(self, data):
-        """Transform and extract features from date columns."""
         print('Transforming dates...')
-        data['start_time'] = pd.to_datetime(data['start_time']).dt.date
-        data['last_updated'] = pd.to_datetime(data['last_updated']).dt.date
+        """Transform and extract features from date columns."""
+        data['start_time'] = pd.to_datetime(data['start_time'], utc=True).dt.tz_localize(None)
+        data['last_updated'] = pd.to_datetime(data['last_updated'], utc=True).dt.tz_localize(None)
         data['updated_since_creation'] = (data['last_updated'] - data['start_time']).dt.days
         data['updated_label'] = (data['updated_since_creation'] >= 1).astype(int)
         return data.drop(columns=['start_time', 'last_updated'])

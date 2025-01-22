@@ -28,7 +28,7 @@ In `requirements.txt` file, you will find the list of packages required to compi
 
 `pip install -r requirements.txt`
 
-To run the process correctly, it is necessary to have the `.parquet` files attached in the email with the solution. These files should be placed in the `notebooks` folder.
+To run the process correctly, it is necessary to have the `.parquet` and  `MLA_100k_checked_v3` files attached in the email with the solution. These files should be placed in the `notebooks` folder.
 
 
 ### 2. Feature Selection and Performance Evaluation
