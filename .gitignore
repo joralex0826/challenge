@@ -1,0 +1,57 @@
+# Logs y archivos temporales
+*.log
+*.tmp
+*.bak
+*.swp
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Configuraciones de IDEs y editores
+.vscode/
+.idea/
+*.sublime-workspace
+
+# Dependencias
+/node_modules/
+/venv/
+/env/
+/__pycache__/
+
+# Archivos de Python
+*.pyc
+*.pyo
+*.pyd
+*.egg
+*.egg-info/
+
+# Archivos de datos
+*.csv
+*.tsv
+*.sqlite
+*.db
+*.jsonlines
+
+# Llaves y credenciales
+*.key
+*.pem
+*.env
+
+# Archivos de build
+/build/
+/dist/
+*.class
+*.jar
+
+# Archivos de salida
+*.pkl
+*.h5
+*.hdf5
+/outputs/
+
+# Configuración personal
+*.config
+*.local
+*.envrc
+
