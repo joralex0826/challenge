@@ -19,19 +19,17 @@ This repository includes the following deliverables:
 
 ### 1. Model Implementation
 
-This section includes all the code necessary to define, train, and evaluate the model. The following steps are covered:
+In the following module **[main.py](main.py)**, you will be able to execute the modeling and evaluation process for the XGBoost - BERT embeddings model. To take a closer look at the exploration with other models, you can refer to the **[notebook](notebooks/MELI_challenge.ipynb)**.
 
-- **Data Preprocessing**: Data cleaning, transformations, and feature engineering applied to the dataset.
-- **Model Definition**: The architecture of the model used, including the choice of algorithms, hyperparameters, and libraries.
-- **Training**: The process followed to train the model.
-- **Model Evaluation**: The metrics used to evaluate the model's performance, including accuracy, precision, recall, or any other relevant metric.
-- **Model Saving/Loading**: Instructions on how to save the trained model and load it for inference.
+When running the process, it will train the model, save the `.pkl` file, and additionally, a summary of the obtained metrics will be printed on the screen.
+
 
 In `requirements.txt` file, you will find the list of packages required to compile the process. If they are not installed already, you can execute:
 
 `pip install -r requirements.txt`
 
-The program can then be executed from a command line using the [`main.py`]. By running this program, you will train the chosen model (XGBoost with embeddings) and return its respective metrics. This step is not mandatory, as you can alternatively refer to the notebook [`MELI_challenge.ipynb`] to review or execute it.
+To run the process correctly, it is necessary to have the `.parquet` files attached in the email with the solution. These files should be placed in the `notebooks` folder.
+
 
 ### 2. Feature Selection and Performance Evaluation
 
