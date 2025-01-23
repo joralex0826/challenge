@@ -149,4 +149,6 @@ This notebook includes the entire process carried out, from EDA to modeling.
 
 - **Hyperparameter Tuning:** Due to computational limitations, further testing with different hyperparameters was not feasible. This could be better explored using grid search or Bayesian search, as well as experimenting with various combinations of variables.
 
+- It is important to highlight that errors in both directions are critical in this problem. Misclassifying a new product as used or a used product as new can both lead to negative consequences. However, while incorrectly classifying a used product as new is more severe due to customer expectations and potential legal implications, the model provides a robust balance. This balancing capability allows the system to address the different risks associated with both labels reliably, making the model a solid and suitable tool for production deployment.
+
 - It is expected that the model, which currently has a good level of accuracy, will be improved over time and better results will be achieved.
