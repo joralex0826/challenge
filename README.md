@@ -121,6 +121,8 @@ Some conclusions:
 
 - The fact that the metrics are consistent and high (~0.87, in the best model) across all categories shows that the model is performing well and uniformly for both classes. It is not ignoring or prioritizing one class over the other, suggesting that it is robust.
 
+- It is decided to use BERT embeddings since these are excellent for working with NLP problems, in this case, they are applicated to the product name. However, it is possible to try another type of embeddings such as word2vec.
+
 - **Logistic Regression - BERT embeddings** can be considered an excellent option as it takes 1/4 of the time required to train the XGBoost (with better results). Additionally, its metrics are not far from the best.
 
 - **XGBoost** is a good choice as a base model, as it is modeled using only 29 variables. Under this condition, different combinations can be tested, and performance can be measured.
